@@ -11,4 +11,4 @@ pydocstyle invenio_records_editor tests docs && \
 isort -rc -c -df && \
 check-manifest --ignore ".travis-*,examples/static*" && \
 sphinx-build -qnNW docs docs/_build/html && \
-python setup.py test
+python -m pytest
